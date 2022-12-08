@@ -23,7 +23,7 @@ pipeline {
               steps {
                   echo 'building the software'
 		  // sh 'rm package-lock.json'
-                  sh 'npm install'
+                  
               }
       }
       
