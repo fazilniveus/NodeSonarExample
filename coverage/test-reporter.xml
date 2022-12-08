@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="/Users/apple/Documents/dev/projectwork/NodeSonarExample/src/test/index.test.js">
+        <testCase name="Test the root path It should response the GET method" duration="37"/>
+        <testCase name="Test the root path It should response the GET test method" duration="7"/>
+    </file>
+</testExecutions>
