@@ -23,15 +23,15 @@ pipeline {
               steps {
                   echo 'building the software'
 		  // sh 'rm package-lock.json'
-                  
+                  sh "npm run test"
               }
       }
       
        stage('SonarQube analysis') {
         	steps{
         		withSonarQubeEnv('sonarqube-9.7.1') { 
-              			sh "npm run test"
-                    sh "npm run sonar"
+              			
+                   	 sh "npm run sonar"
     			  }
         	}
         }
