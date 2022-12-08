@@ -24,7 +24,7 @@ pipeline {
                   echo 'building the software'
 		  // sh 'rm package-lock.json'
 		      sh "npm install jest --global"
-                  sh "npm run coverage"
+                  sh "npm run test"
               }
       }
       
@@ -32,6 +32,7 @@ pipeline {
         	steps{
         		withSonarQubeEnv('sonarqube-9.7.1') { 
               		sh "npm run sonar"
+			sh "ls"
     			  }
         	}
         }
