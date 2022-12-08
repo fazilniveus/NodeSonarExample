@@ -13,7 +13,7 @@
       "/node_modules/"
     ],
     "testPathIgnorePatterns": [
-    "<rootDir>/lib/",
+    "<rootDir>/lib/"
     ],
     "testResultsProcessor": "jest-sonar-reporter"
   },
