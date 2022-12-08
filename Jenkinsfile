@@ -32,7 +32,16 @@ pipeline {
         	steps{
         		withSonarQubeEnv('sonarqube-9.7.1') { 
               			
-                   	 sh "npm  sonar"
+                   	 sh "/data/jenkins/sonar-scanner/bin/sonar-scanner " +
+                "-Dsonar.projectVersion=1.0 " +
+                "-Dsonar.language=js " +
+                "-Dsonar.sourceEncoding=UTF-8 " +
+                "-Dsonar.exclusions=src/*tests*/*.test.ts" +
+                "-Dsonar.test.inclusions=src/*tests*/*.test.ts " +
+                "-Dsonar.typescript.lcov.reportPaths=coverage/lcov.info " +
+                "-Dsonar.testExecutionReportPaths=coverage/clover.xml " +
+                "-Dsonar.projectKey=job-hello-principal " +
+                "-Dsonar.exclusions=node_modules/*,dist/*,src/*tests*/*,assets/*,coverage/*"
     			  }
         	}
         }
