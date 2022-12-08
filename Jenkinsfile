@@ -10,10 +10,6 @@ pipeline {
                 CLUSTER_NAME = 'network18-cluster'
                 LOCATION = 'us-central1-a'
                 CREDENTIALS_ID = 'kubernetes'	
-		
-		PROJECTKEY= 'network'
-        	SONARURL = 'http://34.93.6.57:9000'
-        	LOGIN= 'sqp_f741d02efb6d27d1a32f33fba69855545cdfc646'
 	}
 	
     stages {
