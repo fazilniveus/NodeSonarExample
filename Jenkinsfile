@@ -19,7 +19,13 @@ pipeline {
 		    }
 	    }
       
-      
+      stage('build') {
+              steps {
+                  echo 'building the software'
+		  // sh 'rm package-lock.json'
+                  sh 'npm install'
+              }
+      }
       
        stage('SonarQube analysis') {
         	steps{
