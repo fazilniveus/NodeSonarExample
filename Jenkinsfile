@@ -23,6 +23,7 @@ pipeline {
               steps {
                   echo 'building the software'
 		  // sh 'rm package-lock.json'
+		      sh "sudo npm install jest --global"
                   sh "npm run test"
               }
       }
