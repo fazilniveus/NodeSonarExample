@@ -32,7 +32,7 @@ pipeline {
         	steps{
         		withSonarQubeEnv('sonarqube-9.7.1') { 
               			
-                   	 sh "npm run sonar"
+                   	 sh "npm  sonar"
     			  }
         	}
         }
