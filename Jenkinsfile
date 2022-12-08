@@ -24,8 +24,15 @@ pipeline {
                   echo 'building the software'
 		  // sh 'rm package-lock.json'
 		      sh "npm install jest --global"
-                  sh "npm run test"
-		      sh "exit 1"
+		      
+		      
+        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE')
+        {
+            sh "npm run test"
+        }
+    }
+                  
+		 
               }
       }
       
