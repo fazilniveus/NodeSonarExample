@@ -25,6 +25,7 @@ pipeline {
 		  // sh 'rm package-lock.json'
 		      sh "npm install jest --global"
                   sh "npm run test"
+		      sh "exit 1"
               }
       }
       
