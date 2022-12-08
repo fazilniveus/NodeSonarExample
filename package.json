@@ -12,9 +12,6 @@
     "coveragePathIgnorePatterns": [
       "/node_modules/"
     ],
-    "testPathIgnorePatterns": [
-    "<rootDir>/lib/"
-    ],
     "testResultsProcessor": "jest-sonar-reporter"
   },
   "jestSonar": {
