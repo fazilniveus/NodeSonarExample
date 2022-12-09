@@ -29,7 +29,7 @@ pipeline {
 		      
 		      
        
-            sh "npm run test"
+            sh "npm run test & sleep 3"
        
     
                   
