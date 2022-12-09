@@ -10,5 +10,16 @@ describe("Test the root path", () => {
         done();
       });
   });
+  
+  
+describe("Test the root path", () => {
+  test("It should response the GET app method", done => {
+    request(app)
+      .get("/app")
+      .then(response => {
+        expect(response.statusCode).toBe(200);
+        done();
+      });
+  });
 
 });
