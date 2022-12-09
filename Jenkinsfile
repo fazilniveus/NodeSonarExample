@@ -40,7 +40,7 @@ pipeline {
       
        stage('SonarQube analysis') {
         	steps{
-        		withSonarQubeEnv('sonarqube-9.7-community') { 
+        		withSonarQubeEnv('sonarqube-9.7.1') { 
               		sh "npm run sonar"
 			sh "ls"
     			  }
