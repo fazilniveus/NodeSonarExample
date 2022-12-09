@@ -28,10 +28,9 @@ pipeline {
 		      sh "npm install jest --global"
 		      
 		      
-        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE')
-        {
+       
             sh "npm run test"
-        }
+       
     
                   
 		 
