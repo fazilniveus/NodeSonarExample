@@ -3,6 +3,8 @@ sonarqubeScanner(
     {
         serverUrl:  'http://35.200.204.102:9000',
         options : {
+            'sonar.login': 'admin',
+            'sonar.password': 'sonar',
             'sonar.sources':  'src',
             'sonar.tests':  'src',
             'sonar.inclusions'  :  '**', // Entry point of your code
