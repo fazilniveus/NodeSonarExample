@@ -56,7 +56,7 @@ pipeline {
                         //slackSend (channel: '****', color: '#F01717', message: "*$JOB_NAME*, <$BUILD_URL|Build #$BUILD_NUMBER>: Code coverage threshold was not met! <http://****.com:9000/sonarqube/projects|Review in SonarQube>.")
                     //}
                 
-                    waitForQualityGate abortPipeline: true                    
+                    waitForQualityGate abortPipeline: true, credentialsId:‘sonar’
                 }
             }
        }
