@@ -24,7 +24,6 @@ pipeline {
                   echo 'building the software'
 		  // sh 'rm package-lock.json'
 		      sh "node --version"
-		      sh "nvm install v16.18.1"
 		      sh "npm i"
 		      sh "npm install jest --global"
 		      
